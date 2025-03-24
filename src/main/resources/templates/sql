@@ -1,0 +1,15 @@
+create database sb0313;
+
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL,
+    password VARCHAR(100) NOT NULL,
+    role VARCHAR(50) NOT NULL
+);
+
+INSERT INTO users (id, username, password, role)
+VALUES (1, 'root', '1234', 'ADMIN');
+
+INSERT INTO users (id, username, password, role)
+VALUES (2, 'hong', '1234', 'ROLE_USER');
